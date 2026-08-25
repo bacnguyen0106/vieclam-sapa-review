@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090E"/>
+      <stop offset="50%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0B0F17"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative Glow -->
+  <circle cx="950" cy="180" r="220" fill="#3b82f6" opacity="0.15" filter="url(#glow)"/>
+  <circle cx="200" cy="500" r="180" fill="#3b82f6" opacity="0.1" filter="url(#glow)"/>
+
+  <!-- Border Frame -->
+  <rect x="30" y="30" width="1140" height="570" rx="30" fill="none" stroke="#3b82f6" stroke-width="2" stroke-opacity="0.3"/>
+
+  <!-- Brand Badge Top -->
+  <g transform="translate(80, 80)">
+    <rect width="280" height="48" rx="24" fill="rgba(255, 255, 255, 0.08)" stroke="#3b82f6" stroke-opacity="0.4"/>
+    <text x="24" y="30" font-family="-apple-system, system-ui, sans-serif" font-size="20" font-weight="bold" fill="#3b82f6">
+      💼  SaPa Careers Guide
+    </text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="80" y="240" font-family="-apple-system, system-ui, sans-serif" font-size="46" font-weight="900" fill="#FFFFFF" width="1040">
+    Cẩm Nang Nghề Nghiệp & Mức Lương Khách Sạn Sa Pa 2026
+  </text>
+
+  <!-- Tagline / Description -->
+  <text x="80" y="320" font-family="-apple-system, system-ui, sans-serif" font-size="24" font-weight="500" fill="#94A3B8">
+    Khảo sát mức lương thực tế, chế độ bao ăn ở & kỹ năng ứng tuyển resort 5 sao
+  </text>
+
+  <!-- Features Pills -->
+  <g transform="translate(80, 390)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="280" height="44" rx="12" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(255, 255, 255, 0.1)"/>
+    <text x="20" y="28" font-family="-apple-system, system-ui, sans-serif" font-size="16" font-weight="600" fill="#E2E8F0">⭐ Đánh Giá Chuyên Gia 4.9/5</text>
+
+    <!-- Pill 2 -->
+    <rect x="300" y="0" width="290" height="44" rx="12" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(255, 255, 255, 0.1)"/>
+    <text x="320" y="28" font-family="-apple-system, system-ui, sans-serif" font-size="16" font-weight="600" fill="#E2E8F0">📍 Cập Nhật Thị Trường 2026</text>
+
+    <!-- Pill 3 -->
+    <rect x="610" y="0" width="310" height="44" rx="12" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(255, 255, 255, 0.1)"/>
+    <text x="630" y="28" font-family="-apple-system, system-ui, sans-serif" font-size="16" font-weight="600" fill="#E2E8F0">🛡️ Dữ Liệu Thực Tế Xác Thực</text>
+  </g>
+
+  <!-- Footer Partner Callout -->
+  <g transform="translate(80, 500)">
+    <line x1="0" y1="0" x2="1040" y2="0" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+    <text x="0" y="42" font-family="-apple-system, system-ui, sans-serif" font-size="18" font-weight="bold" fill="#64748B">
+      Hệ thống vệ tinh SEO trực thuộc:
+    </text>
+    <text x="320" y="42" font-family="-apple-system, system-ui, sans-serif" font-size="22" font-weight="900" fill="#3b82f6">
+      LaoCaiView.vn ↗
+    </text>
+    <text x="820" y="42" font-family="-apple-system, system-ui, sans-serif" font-size="16" font-weight="500" fill="#475569">
+      🌐 vieclam-sapa-review.vercel.app
+    </text>
+  </g>
+</svg>

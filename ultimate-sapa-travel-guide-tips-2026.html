@@ -20,166 +20,25 @@
     <meta property="og:description" content="Your comprehensive guide to exploring Sapa: Mount Fansipan summit, golden terraced fields, cultural trekking, and wellness herbal baths.">
     <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Fansipan_Summit_3143m_aerial_view_Sa_Pa_Lao_Cai_Vietnam.jpg/1200px-Fansipan_Summit_3143m_aerial_view_Sa_Pa_Lao_Cai_Vietnam.jpg">
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap');
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        background: #040915;
-        color: #f1f5f9;
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        line-height: 1.8;
-      }
-      .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
-      .header-nav {
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        background: rgba(4, 9, 21, 0.95);
-        backdrop-filter: blur(15px);
-        border-bottom: 1px solid rgba(179, 144, 93, 0.35);
-        padding: 16px 0;
-      }
-      .brand-title {
-        font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', sans-serif;
-        font-size: 22px;
-        font-weight: 900;
-        color: #e5c285;
-        text-decoration: none;
-        letter-spacing: 0.5px;
-      }
-      .hero-card {
-        background: linear-gradient(135deg, #091530 0%, #050d20 100%);
-        border: 1px solid rgba(179, 144, 93, 0.35);
-        border-radius: 28px;
-        padding: 40px;
-        margin-top: 36px;
-        margin-bottom: 36px;
-        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
-      }
-      .hero-badge {
-        display: inline-block;
-        background: rgba(179, 144, 93, 0.2);
-        color: #f3d49e;
-        border: 1px solid #B3905D;
-        border-radius: 9999px;
-        padding: 6px 20px;
-        font-size: 13px;
-        font-weight: 800;
-        letter-spacing: 1px;
-        margin-bottom: 18px;
-      }
-      h1 {
-        font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', sans-serif !important;
-        font-size: 38px;
-        font-weight: 800;
-        line-height: 1.3;
-        color: #ffffff;
-        margin-bottom: 20px;
-      }
-      h2 {
-        font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', sans-serif !important;
-        font-size: 26px;
-        font-weight: 700;
-        color: #e5c285;
-        margin-top: 40px;
-        margin-bottom: 18px;
-        border-left: 4px solid #B3905D;
-        padding-left: 14px;
-      }
-      h3 {
-        font-size: 19px;
-        font-weight: 700;
-        color: #ffffff;
-        margin-top: 24px;
-        margin-bottom: 10px;
-      }
-      p { font-size: 16px; color: #cbd5e1; margin-bottom: 18px; }
-      .lead-quote {
-        font-size: 18px;
-        font-style: italic;
-        color: #e2e8f0;
-        border-left: 4px solid #38bdf8;
-        padding: 16px 24px;
-        background: rgba(56, 189, 248, 0.08);
-        border-radius: 0 16px 16px 0;
-        margin: 28px 0;
-      }
-      .grid-2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 22px;
-        margin: 28px 0;
-      }
-      @media (max-width: 768px) {
-        .grid-2 { grid-template-columns: 1fr; }
-        .hero-card { padding: 24px; }
-        h1 { font-size: 28px; }
-      }
-      .feature-box {
-        background: #07122a;
-        border: 1px solid rgba(179, 144, 93, 0.25);
-        border-radius: 18px;
-        padding: 24px;
-      }
-      .feature-box h4 { margin: 0 0 10px 0; font-size: 17px; color: #f3d49e; }
-      .feature-box p { margin: 0; font-size: 14.5px; color: #94a3b8; }
-      .img-wrapper {
-        border-radius: 20px;
-        overflow: hidden;
-        margin: 28px 0;
-        box-shadow: 0 16px 40px rgba(0,0,0,0.5);
-        border: 1px solid rgba(255,255,255,0.1);
-      }
-      .img-wrapper img { width: 100%; height: auto; display: block; }
-      .img-caption { text-align: center; font-size: 13.5px; color: #94a3b8; padding: 10px; background: #020713; font-style: italic; }
-      .cta-card {
-        background: linear-gradient(135deg, #13244d 0%, #0a1329 100%);
-        border: 2px solid #B3905D;
-        border-radius: 24px;
-        padding: 36px;
-        text-align: center;
-        margin-top: 48px;
-        box-shadow: 0 20px 50px rgba(179,144,93,0.25);
-      }
-      .btn-gold {
-        background: linear-gradient(135deg, #B3905D 0%, #d4b47d 100%);
-        color: #040915;
-        font-weight: 800;
-        padding: 16px 36px;
-        border-radius: 14px;
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 16px;
-        box-shadow: 0 8px 25px rgba(179,144,93,0.4);
-        transition: transform 0.2s ease;
-      }
-      .btn-gold:hover { transform: translateY(-2px); }
-      ul { padding-left: 20px; color: #cbd5e1; }
-      li { margin-bottom: 10px; }
-      .tag-season { background: rgba(56,189,248,0.15); color: #38bdf8; padding: 3px 10px; border-radius: 6px; font-weight: 700; font-size: 12px; }
-      body, h1, h2, h3, h4, h5, h6 { font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', system-ui, sans-serif !important; }
-  </style>
-  <style id="standard-typography">
-    html, body {
-      font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Be Vietnam Pro (100% Tiếng Việt Chuẩn Không Lỗi Dấu) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-feature-settings: "kern" 1, "liga" 1;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
     }
-    h1, h2, h3, h4, h5, h6, .font-serif-luxury, .cinzel, [class*="font-serif"] {
-      font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', system-ui, sans-serif !important;
-      font-feature-settings: "kern" 1;
-      letter-spacing: -0.02em;
+    body, p, li, span, a, input, button, select, textarea {
+      font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
     }
-    h1 {
-      line-height: 1.35 !important;
-      word-break: break-word;
-    }
-    p, li, span, td, th {
-      font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', system-ui, sans-serif !important;
+    h1, h2, h3, h4, h5, h6, strong, b, .font-serif, [class*="font-serif"], .font-black {
+      font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+      letter-spacing: -0.01em;
     }
   </style>
 </head>

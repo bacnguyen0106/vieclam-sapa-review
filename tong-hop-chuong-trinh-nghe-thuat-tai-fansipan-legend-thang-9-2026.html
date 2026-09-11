@@ -22,9 +22,9 @@
   <!-- Chart.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  
+  
+  
 
   <script>
     tailwind.config = {
@@ -69,26 +69,24 @@
   }
   </script>
 
-  <style id="standard-typography">
-    html, body {
-      font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Be Vietnam Pro (100% Tiếng Việt Chuẩn Không Lỗi Dấu) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-feature-settings: "kern" 1, "liga" 1;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
-      background-color: #0c0a09;
-      color: #f5f5f4;
     }
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', system-ui, sans-serif !important;
-      font-feature-settings: "kern" 1;
-      letter-spacing: -0.02em;
+    body, p, li, span, a, input, button, select, textarea {
+      font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
     }
-    h1 {
-      line-height: 1.35 !important;
-      word-break: break-word;
-    }
-    p, li, span, td, th {
-      font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', system-ui, sans-serif !important;
+    h1, h2, h3, h4, h5, h6, strong, b, .font-serif, [class*="font-serif"], .font-black {
+      font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+      letter-spacing: -0.01em;
     }
   </style>
 </head>
